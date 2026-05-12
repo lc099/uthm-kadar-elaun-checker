@@ -189,8 +189,8 @@ tr.sel td.n{color:#1B5E20}
 
 <div class="src">
 <b>Sumber:</b><br>
-&emsp;UTHM. Pekeliling Bendahari Bil. 1/2023 — Tugas Rasmi Di Dalam Dan Luar Negara<br>
-&emsp;UTHM. Pekeliling Bendahari Bil. 1/2024 — Berkursus Kecuali Kursus Pra Perkhidmatan
+&emsp;<a href="https://bendahari.uthm.edu.my/images/PDFPB/PEKELILING_TAHUNAN/2023/Pekeliling/Pekeliling_Bendahari_Bil_1_2023_1.pdf" target="_blank" style="color:#2E8B7A">UTHM. Pekeliling Bendahari Bil. 1/2023 — Kadar Dan Syarat Tuntutan Elaun, Kemudahan Dan Bayaran Kepada Staf UTHM Kerana Menjalankan Tugas Rasmi Di Dalam Dan Luar Negara</a><br>
+&emsp;<a href="https://bendahari.uthm.edu.my/images/PDFPB/PEKELILING_UNIT/PEMBAYARAN_TUNTUTAN_PENDAHULUAN/PEKELILING/Pekeliling%20Bendahari%20Bil%201%202024.pdf" target="_blank" style="color:#2E8B7A">UTHM. Pekeliling Bendahari Bil. 1/2024 — Kadar Dan Syarat Tuntutan Elaun, Kemudahan Dan Bayaran Kepada Staf UTHM Semasa Berkursus Kecuali Kursus Pra Perkhidmatan</a>
 </div>
 </div></div>
 <div class="ft">Pejabat Antarabangsa UTHM · 2026</div>
@@ -258,7 +258,7 @@ var src=fx?'Kadar tetap':(k?'Kat '+k:'Pilih negara');
 var bk=g.bk||'Bilik Biasa';
 document.getElementById('rts').innerHTML=
 '<div class="rc hi"><div class="rl">Elaun Makan</div><div class="rv num">'+(lm!==null?'RM '+lm:'—')+'<small> /hari</small></div><div class="rs">'+src+'</div></div>'+
-'<div class="rc"><div class="rl">Pendahuluan Diri Sewa Hotel</div><div class="rv num">'+(lh!==null?'RM '+lh:'—')+'<small> /mlm</small></div><div class="rs">Layak: '+bk+'</div></div>'+
+'<div class="rc"><div class="rl">Pendahuluan Diri Sewa Hotel</div><div class="rv num">'+(lh!==null?'RM '+lh:'—')+'<small> /mlm</small></div><div class="rs" style="font-size:10px;font-weight:600;color:#1B4B5A;margin-top:4px">Kelayakan: '+bk+'</div><div class="rs" style="font-size:9px;margin-top:2px">Layak menuntut atas kadar sebenar</div></div>'+
 '<div class="rc"><div class="rl">Elaun Lojing</div><div class="rv num">'+(ll!==null?'RM '+ll:'—')+'<small> /mlm</small></div></div>';
 document.getElementById('tbh1').textContent=ir?'Lampiran B — Kategori negara (Tugas Rasmi)':'Lampiran C — Kategori negara (Berkursus)';
 var h='<tr><th>Kategori</th><th class="r">Makan /hari</th><th class="r">Pendahuluan Diri<br>Sewa Hotel /mlm</th><th class="r">Lojing /mlm</th></tr>';
@@ -271,13 +271,13 @@ var htlDisp=typeof htlSM==='number'?'RM '+htlSM:htlSM;
 var bk=g.bk||'Bilik Biasa';
 document.getElementById('rts').innerHTML=
 '<div class="rc hi"><div class="rl">Elaun Makan</div><div class="rv num">RM '+ms+'<small> /hari</small></div><div class="rs">Semenanjung</div></div>'+
-'<div class="rc"><div class="rl">Bayaran Sewa Hotel</div><div class="rv num">'+htlDisp+'<small> /mlm</small></div><div class="rs">Layak: '+bk+'</div></div>'+
+'<div class="rc"><div class="rl">Sewa Penginapan (maks)</div><div class="rv num">'+htlDisp+'<small> /mlm</small></div><div class="rs" style="font-size:10px;font-weight:600;color:#1B4B5A;margin-top:4px">Kelayakan: '+bk+'</div></div>'+
 '<div class="rc"><div class="rl">Elaun Lojing</div><div class="rv num">RM '+RDL[b]+'<small> /mlm</small></div><div class="rs">Semenanjung</div></div>';
 document.getElementById('tbh1').textContent=ir?'Dalam negeri — Tugas rasmi':'Dalam negeri — Berkursus';
 document.getElementById('tbt1').innerHTML=
 '<tr><th></th><th class="r">Semenanjung</th><th class="r">Sabah / Sarawak</th></tr>'+
 '<tr class="sel"><td>Elaun Makan</td><td class="r n">RM '+ms+' /hari</td><td class="r n">RM '+ms2+' /hari</td></tr>'+
-'<tr><td>Bayaran Sewa Hotel<br><span style="font-size:10px;color:#7BAFA5;font-style:italic">Layak: '+bk+'</span></td><td class="r n">'+(typeof RDH[b]==='number'?'RM '+RDH[b]:RDH[b])+' /mlm</td><td class="r n">'+(typeof RDHS[b]==='number'?'RM '+RDHS[b]:RDHS[b])+' /mlm</td></tr>'+
+'<tr><td>Sewa Penginapan (maks)<br><span style="font-size:11px;font-weight:700;color:#1B4B5A">Kelayakan: '+bk+'</span></td><td class="r n">'+(typeof RDH[b]==='number'?'RM '+RDH[b]:RDH[b])+' /mlm</td><td class="r n">'+(typeof RDHS[b]==='number'?'RM '+RDHS[b]:RDHS[b])+' /mlm</td></tr>'+
 '<tr><td>Elaun Lojing</td><td class="r n">RM '+RDL[b]+' /mlm</td><td class="r n">RM '+RDLS[b]+' /mlm</td></tr>'+
 '<tr><td>Elaun Harian</td><td class="r n">RM '+(ms/2)+' /hari</td><td class="r n">RM '+(ms2/2)+' /hari</td></tr>';
 }}
